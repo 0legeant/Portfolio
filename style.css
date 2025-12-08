@@ -1,0 +1,31 @@
+/* Reset & global */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow-x:hidden; scroll-behavior:smooth; transition: background 0.3s, color 0.3s;}
+header {position:fixed; top:0; width:100%; background:#fff; padding:1rem 2rem; box-shadow:0 2px 15px rgba(0,0,0,0.1); z-index:100; backdrop-filter:blur(8px);}
+header ul {display:flex; list-style:none; justify-content:flex-end; gap:2rem;}
+header ul li a {text-decoration:none; color:#000; font-weight:600; transition: color 0.3s, transform 0.3s;}
+header ul li a:hover {color:#007aff; transform:scale(1.1);}
+header ul li button {background:none; border:none; cursor:pointer; font-size:1.2rem; transition: transform 0.3s;}
+header ul li button:hover {transform:scale(1.2);}
+
+/* Sections full page */
+.section {height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; position:relative; padding:2rem; transition: transform 1s cubic-bezier(0.4,0,0.2,1);}
+#about {background:#f2f2f2;}
+#projects {background:#e0e0e0;}
+#contact {background:#d0d0d0;}
+
+/* Cards */
+.cards {display:flex; gap:2rem; flex-wrap:wrap; justify-content:center; margin-top:2rem;}
+.card {background:#fff; padding:2rem; border-radius:25px; box-shadow:0 15px 30px rgba(0,0,0,0.1); width:250px; opacity:0; transform:translateY(30px); transition: transform 0.6s, opacity 0.6s;}
+.card.show {opacity:1; transform:translateY(0);}
+.card:hover {transform:translateY(-15px) scale(1.05); box-shadow:0 25px 45px rgba(0,0,0,0.2);}
+
+/* Bulles */
+.bubbles {position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:0;}
+.bubble {position:absolute; border-radius:50%; background:rgba(0,150,255,0.15); animation:bubbleMove linear infinite;}
+@keyframes bubbleMove {0% {transform:translateY(100vh) scale(0.5);} 100% {transform:translateY(-10vh) scale(1);}}
+
+/* Dark Mode */
+body.dark {background:#111; color:#eee;}
+body.dark header {background:#222;}
+body.dark .card {background:#333; color:#eee;}
