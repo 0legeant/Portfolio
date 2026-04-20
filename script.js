@@ -1,6 +1,6 @@
 const themeToggle = document.getElementById("theme-toggle");
 const langToggle = document.getElementById("lang-toggle");
-const pageName = document.body.dataset.page;
+const pageName = document.body?.dataset?.page || "index";
 
 const translations = {
   index: {
@@ -72,20 +72,6 @@ const translations = {
       "studio.game_2_text": "Une ville inspiree de Paris, des quartiers sous tension, et un avocat capable d'utiliser la loi, l'influence et la peur comme armes.",
       "studio.game_3_tag": "Jeu 3",
       "studio.game_3_text": "Un royaume gothique, des vampires, un complot royal et une progression fondee sur la furtivite, le parkour et les choix moraux.",
-      "studio.system_eyebrow": "Vendetta System",
-      "studio.system_title": "Une IA de memoire persistante",
-      "studio.system_text": "Le Vendetta System est une architecture d'IA comportementale persistante. Les ennemis se souviennent, changent de statut, s'adaptent au style du joueur et peuvent revenir plus tard avec de nouvelles strategies.",
-      "studio.system_trait_1": "Memoire des affronts, humiliations et pertes",
-      "studio.system_trait_2": "Hierarchie dynamique et promotions organiques",
-      "studio.system_trait_3": "Represailles adaptees au style du joueur",
-      "studio.system_trait_4": "Impact durable sur les factions et la sauvegarde",
-      "studio.creation_eyebrow": "Creation",
-      "studio.creation_title": "Le studio et ses racines",
-      "studio.creation_text": "Ma vision part de Marseille et Plan-de-Cuques. Je veux creer en France, en VO francaise, avec une identite nourrie par des cultures reelles, des sujets humains et une volonte de transmission.",
-      "studio.creation_trait_1": "Origines locales et ancrage culturel",
-      "studio.creation_trait_2": "VO francaise et ouverture internationale",
-      "studio.creation_trait_3": "Creation ambitieuse meme avec peu de moyens au depart",
-      "studio.creation_trait_4": "Respect des joueurs, des equipes et du sens des projets",
 
       "vision.eyebrow": "Vision",
       "vision.title": "Un studio plus humain, plus juste et plus proche des joueurs.",
@@ -116,7 +102,7 @@ const translations = {
       "contact.message_placeholder": "Votre message",
       "contact.send": "Envoyer",
 
-      "footer.text": "\u00A9 2026 Adam Ben Nejma - Portfolio personnel et vision game studio.",
+      "footer.text": "© 2026 Adam Ben Nejma - Portfolio personnel et vision game studio.",
       "document.title": "Adam Ben Nejma | Portfolio"
     },
     en: {
@@ -129,15 +115,15 @@ const translations = {
       "nav.roadmap": "Roadmap",
       "nav.contact": "Contact",
 
-      "hero.eyebrow": "Creative portfolio",
-      "hero.title": "I am building a tech profile with a real video game vision.",
+      "hero.eyebrow": "Creative Portfolio",
+      "hero.title": "I am building a tech profile with a real game studio vision.",
       "hero.text": "My name is Adam Ben Nejma. I love code, hardware, clean design, and above all the idea of creating strong interactive worlds.",
       "hero.cta_games": "See my game concepts",
       "hero.cta_vision": "See my vision",
       "hero.metric_games": "game concepts",
       "hero.metric_studio": "studio vision",
       "hero.metric_learning": "hands-on learning",
-      "hero.panel_label": "Vision bubble",
+      "hero.panel_label": "Vision",
       "hero.panel_text": "I want to create my own game studio, with narrative games, living worlds, and a more human way to design, produce, and share.",
 
       "identity.eyebrow": "Identity",
@@ -147,74 +133,60 @@ const translations = {
       "identity.showcase_title": "What I want to show",
       "identity.trait_1": "Creativity and the drive to build",
       "identity.trait_2": "Curiosity for code, design, and systems",
-      "identity.trait_3": "The will to create a studio and original IPs",
-      "identity.trait_4": "Constant progress through real projects",
+      "identity.trait_3": "The ambition to create a studio and original IPs",
+      "identity.trait_4": "Steady progress through real projects",
 
       "skills.eyebrow": "Skills",
-      "skills.title": "Strong technical foundations with a creation-oriented direction.",
+      "skills.title": "Strong technical foundations with a creation-focused direction.",
       "skills.tag_code": "Code",
       "skills.tag_logic": "Logic",
       "skills.tag_design": "Design",
       "skills.tag_hardware": "Hardware",
-      "skills.web_title": "Web development",
+      "skills.web_title": "Web Development",
       "skills.web_text": "HTML, CSS, JavaScript, interactive interfaces, and front-end animations.",
       "skills.programming_title": "Programming",
       "skills.programming_text": "Python, algorithms, and structured thinking to turn an idea into a system.",
       "skills.design_title": "UI / UX",
       "skills.design_text": "A taste for clean, readable, modern interfaces inspired by a premium finish.",
-      "skills.hardware_title": "PC & optimization",
+      "skills.hardware_title": "PC & Optimization",
       "skills.hardware_text": "Assembly, configuration, testing, and understanding of components and performance.",
 
       "tech.eyebrow": "Tech Projects",
-      "tech.title": "My technical projects to learn, test, and keep progressing.",
-      "tech.project_1_title": "Web portfolio",
+      "tech.title": "My technical projects to learn, test, and keep improving.",
+      "tech.project_1_title": "Web Portfolio",
       "tech.project_1_text": "A modern personal website with smooth navigation, animations, and a more premium presentation.",
-      "tech.project_2_title": "PC hardware",
+      "tech.project_2_title": "PC Hardware",
       "tech.project_2_text": "Building, optimizing, and analyzing performance on personal configurations.",
-      "tech.project_3_title": "Mobile app",
-      "tech.project_3_text": "A mobile prototype to experiment with application logic and interface design.",
+      "tech.project_3_title": "Mobile App",
+      "tech.project_3_text": "A mobile prototype to explore application logic and interface design.",
       "tech.project_4_title": "Arduino",
       "tech.project_4_text": "Small automated systems, sensors, and experiments around electronics.",
-      "tech.project_5_title": "AI exploration",
+      "tech.project_5_title": "AI Exploration",
       "tech.project_5_text": "Script testing and first explorations around artificial intelligence.",
 
       "studio.eyebrow": "Game Studio",
-      "studio.title": "A studio I want to build around meaning, respect, and the memory of play.",
+      "studio.title": "A studio I want to build around meaning, respect, and long-term impact.",
       "studio.bubble": "I want to create a game studio based between Plan-de-Cuques and Marseille, with a strong cultural identity, ambitious narrative games, and a more human way of working.",
       "studio.game_1_tag": "Game 1",
       "studio.game_1_text": "A modern espionage thriller built around a secret legacy. Each mission transforms factions, alliances, and the memory of the world.",
       "studio.game_2_tag": "Game 2",
-      "studio.game_2_text": "A city inspired by Paris, tense districts, and a lawyer capable of using law, influence, and fear as weapons.",
+      "studio.game_2_text": "A city inspired by Paris, tense districts, and a lawyer able to use law, influence, and fear as weapons.",
       "studio.game_3_tag": "Game 3",
-      "studio.game_3_text": "A gothic kingdom, vampires, a royal conspiracy, and a progression built on stealth, parkour, and moral choices.",
-      "studio.system_eyebrow": "Vendetta System",
-      "studio.system_title": "Persistent memory AI",
-      "studio.system_text": "The Vendetta System is a persistent behavioral AI architecture. Enemies remember, change status, adapt to the player's style, and can return later with new strategies.",
-      "studio.system_trait_1": "Memory of insults, humiliation, and losses",
-      "studio.system_trait_2": "Dynamic hierarchy and organic promotions",
-      "studio.system_trait_3": "Retaliation adapted to the player's style",
-      "studio.system_trait_4": "Long-term impact on factions and save data",
-      "studio.creation_eyebrow": "Creation",
-      "studio.creation_title": "The studio and its roots",
-      "studio.creation_text": "My vision starts in Marseille and Plan-de-Cuques. I want to create in France, with original French voice acting, a real cultural identity, human themes, and a strong desire to pass things on.",
-      "studio.creation_trait_1": "Local roots and cultural grounding",
-      "studio.creation_trait_2": "French original voice and international openness",
-      "studio.creation_trait_3": "Ambitious creation even with limited means at the beginning",
-      "studio.creation_trait_4": "Respect for players, teams, and the meaning of projects",
+      "studio.game_3_text": "A gothic kingdom, vampires, a royal conspiracy, and progression built on stealth, parkour, and moral choices.",
 
       "vision.eyebrow": "Vision",
       "vision.title": "A studio that is more human, fairer, and closer to players.",
-      "vision.card_1_title": "The studio",
+      "vision.card_1_title": "The Studio",
       "vision.card_1_text": "I want to build a development studio that stands for ambitious, cultural, and accessible games, without following the industry's usual abuses.",
       "vision.card_2_title": "Employees",
-      "vision.card_2_text": "My goal is to create a more human work environment: respect, equality, health, real support, knowledge transfer, and better living conditions.",
+      "vision.card_2_text": "My goal is to create a more human work environment: respect, equality, health, real support, knowledge sharing, and better living conditions.",
       "vision.card_3_title": "Players",
       "vision.card_3_text": "I want to offer honest games, more accessible pricing, physical editions with real value, and a relationship built on trust.",
       "vision.manifesto_eyebrow": "Manifesto",
-      "vision.manifesto_title": "My studio vision",
+      "vision.manifesto_title": "My Studio Vision",
       "vision.manifesto_text": "I want to prove that a studio can be ambitious without becoming cold. Games should have a soul, employees should be respected, and players should never be treated like wallets.",
       "vision.values_eyebrow": "Values",
-      "vision.values_title": "What I want to stand for",
+      "vision.values_title": "What I Want to Stand For",
       "vision.value_1": "Accessibility, respect, and fairer pricing",
       "vision.value_2": "Culture, identity, and subjects that truly matter",
       "vision.value_3": "Passing knowledge to young and emerging creators",
@@ -222,7 +194,7 @@ const translations = {
 
       "contact.eyebrow": "Contact",
       "contact.title": "Let's talk about a project, an idea, or a collaboration.",
-      "contact.note": "Open to discussions around web, tech, and video game creation.",
+      "contact.note": "Open to discussions around web, tech, and game creation.",
       "contact.name_label": "Name",
       "contact.name_placeholder": "Your name",
       "contact.email_label": "Email",
@@ -231,7 +203,7 @@ const translations = {
       "contact.message_placeholder": "Your message",
       "contact.send": "Send",
 
-      "footer.text": "\u00A9 2026 Adam Ben Nejma - Personal portfolio and game studio vision.",
+      "footer.text": "© 2026 Adam Ben Nejma - Personal portfolio and game studio vision.",
       "document.title": "Adam Ben Nejma | Portfolio"
     }
   },
@@ -262,8 +234,8 @@ const translations = {
       "nav.portfolio": "Portfolio",
       "nav.roadmap": "Roadmap",
       "roadmap.eyebrow": "Roadmap",
-      "roadmap.title": "My path toward creating an independent game studio.",
-      "roadmap.text": "A clear path from technical learning to more ambitious game projects, and then to a real studio identity.",
+      "roadmap.title": "My path toward building an independent game studio.",
+      "roadmap.text": "A clear trajectory from technical learning to more ambitious game projects, and then to a real studio identity.",
       "roadmap.phase_1_step": "Phase 1",
       "roadmap.phase_1_title": "Foundations",
       "roadmap.phase_1_text": "Strengthen the basics in code, logic, interfaces, and game engine culture.",
@@ -271,12 +243,12 @@ const translations = {
       "roadmap.phase_2_title": "Prototyping",
       "roadmap.phase_2_text": "Create small playable prototypes to test gameplay, stealth, and choice-driven ideas.",
       "roadmap.phase_3_step": "Phase 3",
-      "roadmap.phase_3_title": "Serious projects",
-      "roadmap.phase_3_text": "Assemble fuller experiences with progression, AI, level design, and optimization.",
+      "roadmap.phase_3_title": "Serious Projects",
+      "roadmap.phase_3_text": "Build more complete experiences with progression, AI, level design, and optimization.",
       "roadmap.phase_4_step": "Phase 4",
-      "roadmap.phase_4_title": "Indie studio",
+      "roadmap.phase_4_title": "Indie Studio",
       "roadmap.phase_4_text": "Set a direction, publish, build a community, and turn concepts into real IPs.",
-      "roadmap.final_label": "Final vision",
+      "roadmap.final_label": "Final Vision",
       "roadmap.final_text": "Create immersive narrative games where every decision changes relationships, the world, and the memory of characters.",
       "document.title": "Game Dev Roadmap | Adam Ben Nejma"
     }
@@ -305,13 +277,13 @@ const applyLanguage = (lang) => {
   });
 
   if (langToggle) {
-    langToggle.textContent = lang === "fr" ? "\uD83C\uDDEC\uD83C\uDDE7 EN" : "\uD83C\uDDEB\uD83C\uDDF7 FR";
+    langToggle.textContent = lang === "fr" ? "🇬🇧 EN" : "🇫🇷 FR";
   }
 };
 
 const updateThemeToggle = () => {
   if (!themeToggle) return;
-  themeToggle.textContent = document.body.classList.contains("dark") ? "\uD83C\uDF11" : "\uD83C\uDF15";
+  themeToggle.textContent = document.body.classList.contains("dark") ? "🌑" : "🌕";
 };
 
 if (themeToggle) {
