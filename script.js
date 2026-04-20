@@ -67,11 +67,3 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
-
-const contactForm = document.querySelector(".contact-form");
-
-if (contactForm) {
-  contactForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-  });
-}

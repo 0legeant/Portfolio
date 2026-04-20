@@ -337,13 +337,18 @@
           </p>
         </article>
 
-        <form class="contact-form glass-card">
+        <form class="contact-form glass-card" action="https://formspree.io/f/mkokvngj" method="POST">
           <label for="name">Nom</label>
-          <input id="name" type="text" placeholder="Votre nom" required>
+          <input id="name" name="name" type="text" placeholder="Votre nom" required>
+
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="Votre email" required>
+          <input id="email" name="email" type="email" placeholder="Votre email" required>
+
           <label for="message">Message</label>
-          <textarea id="message" placeholder="Votre message" required></textarea>
+          <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+
+          <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
+
           <button class="button primary" type="submit">Envoyer</button>
         </form>
       </div>
