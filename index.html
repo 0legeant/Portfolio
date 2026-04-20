@@ -1,140 +1,224 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio Adam</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adam Ben Nejma | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#projects">Projets</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="theme-toggle">🌙</button></li>
-    </ul>
-  </nav>
-</header>
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
+  <div class="bubbles" aria-hidden="true"></div>
 
-<div class="bubbles"></div>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="#home">Adam Ben Nejma</a>
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#identity">Identite</a></li>
+        <li><a href="#skills">Competences</a></li>
+        <li><a href="#tech-projects">Tech Projects</a></li>
+        <li><a href="#game-studio">Game Studio</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="theme-toggle" type="button" aria-label="Basculer le theme">Moon</button></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <!-- HOME SECTION -->
-  <section id="home" class="section">
-    <h1>Bienvenue sur mon Portfolio</h1>
-    <p>Je m'appelle Adam Ben Nejma. Passionné par le hardware, le code et le design Apple. Objectif : travailler chez NVIDIA ou Apple.</p>
-    <div class="intro-bubbles">
-      <span></span><span></span><span></span>
-      <span></span><span></span><span></span>
-    </div>
-  </section>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Portfolio creatif</p>
+        <h1>Je construis un profil tech avec une vraie vision jeu video.</h1>
+        <p class="hero-text">
+          Je m'appelle Adam Ben Nejma. J'aime le code, le hardware, le design propre et
+          surtout l'idee de creer des mondes interactifs forts.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#game-studio">Voir mes concepts de jeux</a>
+          <a class="button secondary" href="roadmap.html">Voir ma roadmap</a>
+        </div>
+      </div>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="section">
-    <h2>À propos de moi</h2>
-    <p>Depuis mon plus jeune âge, je m'intéresse à la technologie, aux composants et à la programmation. Je m'entraîne aussi physiquement pour atteindre mes objectifs sportifs.</p>
-    <p>Je cherche à apprendre et expérimenter sur tous les aspects de l'informatique et de l'innovation.</p>
-    <ul>
-      <li>Travail en équipe</li>
-      <li>Créativité</li>
-      <li>Persévérance</li>
-      <li>Capacité à résoudre des problèmes</li>
-    </ul>
-  </section>
+      <aside class="hero-panel glass-card">
+        <p class="panel-label">Bulle vision</p>
+        <p class="panel-quote">
+          Je veux creer mon propre studio de jeux video et imaginer des experiences
+          ou les choix du joueur, les factions et le monde evoluent vraiment.
+        </p>
+      </aside>
+    </section>
 
-  <!-- SKILLS SECTION -->
-  <section id="skills" class="section">
-    <h2>Compétences</h2>
-    <div class="skills-cards">
-      <div class="card">
-        <h3>Hardware</h3>
-        <p>Assemblage, optimisation et configuration de PC.</p>
+    <section id="identity" class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">Identite</p>
+        <h2>Un profil entre technologie, design et ambition creative.</h2>
       </div>
-      <div class="card">
-        <h3>Développement Web</h3>
-        <p>HTML, CSS, JS et animations interactives.</p>
-      </div>
-      <div class="card">
-        <h3>Programmation</h3>
-        <p>Python, algorithmique et création d'applications.</p>
-      </div>
-      <div class="card">
-        <h3>Design</h3>
-        <p>UI/UX inspiré du style Apple, épuré et intuitif.</p>
-      </div>
-      <div class="card">
-        <h3>Gestion de projets</h3>
-        <p>Organisation, planification et suivi des objectifs.</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- PROJECTS SECTION -->
-  <section id="projects" class="section">
-    <h2>Projets récents</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Portfolio Web</h3>
-        <p>Site épuré avec animations Apple, scroll fluide et mode sombre.</p>
-      </div>
-      <div class="card">
-        <h3>PC Hardware</h3>
-        <p>Montage, optimisation et tests de performances.</p>
-      </div>
-      <div class="card">
-        <h3>App Mobile</h3>
-        <p>Prototype d'application Android pour expérimenter le code.</p>
-      </div>
-      <div class="card">
-        <h3>Projet Arduino</h3>
-        <p>Automatisation et contrôle de petits robots et capteurs.</p>
-      </div>
-      <div class="card">
-        <h3>Portfolio interactif</h3>
-        <p>Animations scroll, cards animées, bulles et thème sombre.</p>
-      </div>
-      <div class="card">
-        <h3>Exploration IA</h3>
-        <p>Premiers essais avec intelligence artificielle et scripts Python.</p>
-      </div>
-    </div>
-  </section>
+      <div class="split-grid">
+        <article class="glass-card">
+          <p>
+            Depuis petit, je m'interesse au hardware, a la programmation et a la maniere
+            dont une bonne idee peut devenir un vrai projet concret.
+          </p>
+          <p>
+            Mon objectif n'est pas seulement d'apprendre des outils. Je veux construire une
+            vision solide, melangeant developpement, esthetique et conception de jeux.
+          </p>
+        </article>
 
-  <!-- EXPERIENCE SECTION -->
-  <section id="experience" class="section">
-    <h2>Expériences</h2>
-    <ul>
-      <li>Projets personnels en hardware et programmation</li>
-      <li>Participation à des ateliers technologiques</li>
-      <li>Création de prototypes Web et App</li>
-      <li>Développement d’animations interactives</li>
-    </ul>
-  </section>
+        <article class="traits-card">
+          <h3>Ce que je veux montrer</h3>
+          <ul class="trait-list">
+            <li>Creativite et envie de construire</li>
+            <li>Curiosite pour le code, le design et les systemes</li>
+            <li>Volonte de creer un studio et des licences originales</li>
+            <li>Progression constante sur des projets concrets</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email : adambennejma15@gmail.com</p>
-    <form>
-      <label>Nom :</label>
-      <input type="text" placeholder="Votre nom" required>
-      <label>Email :</label>
-      <input type="email" placeholder="Votre email" required>
-      <label>Message :</label>
-      <textarea placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
-</main>
+    <section id="skills" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Competences</p>
+        <h2>Des bases techniques solides avec une direction orientee creation.</h2>
+      </div>
 
-<footer>
-  <p>&copy; 2025 Adam Ben Nejma - Portfolio style Apple</p>
-</footer>
+      <div class="cards cards-4">
+        <article class="card reveal">
+          <span class="card-tag">Code</span>
+          <h3>Developpement web</h3>
+          <p>HTML, CSS, JavaScript, interfaces interactives et animations front-end.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-tag">Logic</span>
+          <h3>Programmation</h3>
+          <p>Python, algorithmique et reflexion structuree pour transformer une idee en systeme.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-tag">Design</span>
+          <h3>UI / UX</h3>
+          <p>Gout pour les interfaces propres, lisibles, modernes et inspirees d'une finition premium.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card-tag">Hardware</span>
+          <h3>PC & optimisation</h3>
+          <p>Assemblage, configuration, tests et comprehension des composants et performances.</p>
+        </article>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section id="tech-projects" class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">Tech Projects</p>
+        <h2>Mes projets techniques pour apprendre, tester et progresser.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <h3>Portfolio web</h3>
+          <p>Un site personnel moderne avec navigation fluide, animations et presentation plus premium.</p>
+        </article>
+        <article class="card reveal">
+          <h3>PC hardware</h3>
+          <p>Montage, optimisation et analyse des performances sur des configurations personnelles.</p>
+        </article>
+        <article class="card reveal">
+          <h3>App mobile</h3>
+          <p>Prototype mobile pour experimenter la logique applicative et le design d'interface.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Arduino</h3>
+          <p>Petits systemes automatises, capteurs et experimentation autour de l'electronique.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Exploration IA</h3>
+          <p>Tests de scripts et premieres explorations autour de l'intelligence artificielle.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="game-studio" class="section studio-section">
+      <div class="section-heading">
+        <p class="eyebrow">Game Studio</p>
+        <h2>Des concepts de jeux que je veux faire grandir dans mon futur studio.</h2>
+      </div>
+
+      <div class="studio-banner glass-card">
+        <p class="studio-bubble">
+          Je veux creer des jeux narratifs avec des mondes vivants, des choix qui laissent
+          des traces et des personnages qui evoluent avec le temps.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card project-card reveal">
+          <span class="card-tag">Jeu 1</span>
+          <h3>L'Ordre d'Alamut</h3>
+          <p>
+            Un thriller d'espionnage moderne autour d'un heritage secret. A chaque mission,
+            les factions bougent et les consequences reviennent plus tard.
+          </p>
+        </article>
+
+        <article class="card project-card reveal">
+          <span class="card-tag">Jeu 2</span>
+          <h3>LAWBREAKER - Padis City</h3>
+          <p>
+            Une grande ville inspiree de Paris, des quartiers sous tension, et un avocat
+            capable d'utiliser la loi comme une arme.
+          </p>
+        </article>
+
+        <article class="card project-card reveal">
+          <span class="card-tag">Jeu 3</span>
+          <h3>Vampire's Decree</h3>
+          <p>
+            Un royaume gothique, des manoirs sombres, des vampires et un complot royal.
+            Furtivite, parkour et choix moraux guident la fin.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-soft">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Discutons d'un projet, d'une idee ou d'une collaboration.</h2>
+      </div>
+
+      <div class="contact-layout">
+        <article class="glass-card contact-card">
+          <p class="contact-label">Email</p>
+          <a class="contact-link" href="mailto:adambennejma15@gmail.com">adambennejma15@gmail.com</a>
+          <p class="contact-note">
+            Ouvert aux echanges autour du web, de la tech et de la creation de jeux video.
+          </p>
+        </article>
+
+        <form class="contact-form glass-card">
+          <label for="name">Nom</label>
+          <input id="name" type="text" placeholder="Votre nom" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Votre email" required>
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Votre message" required></textarea>
+          <button class="button primary" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Adam Ben Nejma - Portfolio personnel et vision game studio.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

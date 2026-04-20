@@ -1,41 +1,67 @@
-// Mode sombre
-const toggle = document.getElementById('theme-toggle');
-toggle.addEventListener('click', () => document.body.classList.toggle('dark'));
+const themeToggle = document.getElementById("theme-toggle");
 
-// Bulles animées
-const bubbleContainer = document.querySelector('.bubbles');
-for(let i=0;i<30;i++){
-  const bubble = document.createElement('div');
-  bubble.classList.add('bubble');
-  const size = Math.random()*20 + 10;
-  bubble.style.width = `${size}px`;
-  bubble.style.height = `${size}px`;
-  bubble.style.left = `${Math.random()*100}%`;
-  bubble.style.animationDuration = `${Math.random()*15 + 5}s`;
-  bubble.style.opacity = Math.random();
-  bubbleContainer.appendChild(bubble);
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    themeToggle.textContent = document.body.classList.contains("dark") ? "Light" : "Moon";
+  });
 }
 
-// Animation des cartes
-const cards = document.querySelectorAll('.card');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){entry.target.classList.add('show');}
+const bubbleContainer = document.querySelector(".bubbles");
+
+if (bubbleContainer) {
+  for (let i = 0; i < 20; i += 1) {
+    const bubble = document.createElement("span");
+    bubble.classList.add("bubble");
+
+    const size = Math.random() * 90 + 24;
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+    bubble.style.left = `${Math.random() * 100}%`;
+    bubble.style.animationDuration = `${Math.random() * 12 + 14}s`;
+    bubble.style.animationDelay = `${Math.random() * 8}s`;
+    bubble.style.opacity = `${Math.random() * 0.4 + 0.15}`;
+
+    bubbleContainer.appendChild(bubble);
+  }
+}
+
+const revealItems = document.querySelectorAll(".reveal, .timeline-item, .vision-panel");
+
+if (revealItems.length) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
+}
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", (event) => {
+    const targetId = anchor.getAttribute("href");
+    const target = targetId ? document.querySelector(targetId) : null;
+
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-}, {threshold:0.5});
-cards.forEach(card => observer.observe(card));
-
-// Scroll fluide par section façon Apple
-let currentSection = 0;
-const sections = document.querySelectorAll('.section');
-window.addEventListener('wheel', e => {
-  if(e.deltaY > 0){currentSection=Math.min(currentSection+1,sections.length-1);}
-  else{currentSection=Math.max(currentSection-1,0);}
-  sections[currentSection].scrollIntoView({behavior:"smooth"});
 });
 
-// Hover menu style Apple
-document.querySelectorAll('header ul li a').forEach(link => {
-  link.addEventListener('mouseenter',()=>link.style.transform='scale(1.1)');
-  link.addEventListener('mouseleave',()=>link.style.transform='scale(1)');
-});
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+  });
+}
