@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-page="index">
   <div class="page-glow page-glow-left"></div>
   <div class="page-glow page-glow-right"></div>
   <div class="bubbles" aria-hidden="true"></div>
@@ -18,14 +18,15 @@
     <nav class="nav">
       <a class="brand" href="#home">Adam Ben Nejma</a>
       <ul class="nav-links">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#identity">Identite</a></li>
-        <li><a href="#skills">Competences</a></li>
-        <li><a href="#tech-projects">Tech Projects</a></li>
-        <li><a href="#game-studio">Game Studio</a></li>
-        <li><a href="#manifesto">Vision</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" data-i18n="nav.home">Accueil</a></li>
+        <li><a href="#identity" data-i18n="nav.identity">Identite</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Competences</a></li>
+        <li><a href="#tech-projects" data-i18n="nav.tech">Tech Projects</a></li>
+        <li><a href="#game-studio" data-i18n="nav.studio">Game Studio</a></li>
+        <li><a href="#manifesto" data-i18n="nav.vision">Vision</a></li>
+        <li><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><button id="lang-toggle" type="button" aria-label="Switch language">EN</button></li>
         <li><button id="theme-toggle" type="button" aria-label="Basculer le theme">&#127765;</button></li>
       </ul>
     </nav>
@@ -34,39 +35,37 @@
   <main>
     <section id="home" class="hero section">
       <div class="hero-copy">
-        <p class="eyebrow">Portfolio creatif</p>
-        <h1>Je construis un profil tech avec une vraie vision jeu video.</h1>
-        <p class="hero-text">
-          Je m'appelle Adam Ben Nejma. J'aime le code, le hardware, le design propre
-          et surtout l'idee de creer des mondes interactifs forts.
+        <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio creatif</p>
+        <h1 data-i18n="hero.title">Je construis un profil tech avec une vraie vision jeu video.</h1>
+        <p class="hero-text" data-i18n="hero.text">
+          Je m'appelle Adam Ben Nejma. J'aime le code, le hardware, le design propre et surtout l'idee de creer des mondes interactifs forts.
         </p>
 
         <div class="hero-actions">
-          <a class="button primary" href="#game-studio">Voir mes concepts de jeux</a>
-          <a class="button secondary" href="#manifesto">Voir ma vision</a>
+          <a class="button primary" href="#game-studio" data-i18n="hero.cta_games">Voir mes concepts de jeux</a>
+          <a class="button secondary" href="#manifesto" data-i18n="hero.cta_vision">Voir ma vision</a>
         </div>
 
         <div class="hero-metrics">
           <article class="metric-card">
             <strong>3</strong>
-            <span>concepts de jeux</span>
+            <span data-i18n="hero.metric_games">concepts de jeux</span>
           </article>
           <article class="metric-card">
             <strong>1</strong>
-            <span>vision de studio</span>
+            <span data-i18n="hero.metric_studio">vision de studio</span>
           </article>
           <article class="metric-card">
             <strong>100%</strong>
-            <span>apprentissage concret</span>
+            <span data-i18n="hero.metric_learning">apprentissage concret</span>
           </article>
         </div>
       </div>
 
       <aside class="hero-panel glass-card">
-        <p class="panel-label">Bulle vision</p>
-        <p class="panel-quote">
-          Je veux creer mon propre studio de jeux video, avec des jeux narratifs,
-          des mondes vivants et une facon plus humaine de concevoir, produire et partager.
+        <p class="panel-label" data-i18n="hero.panel_label">Bulle vision</p>
+        <p class="panel-quote" data-i18n="hero.panel_text">
+          Je veux creer mon propre studio de jeux video, avec des jeux narratifs, des mondes vivants et une facon plus humaine de concevoir, produire et partager.
         </p>
 
         <div class="hero-orbit">
@@ -79,29 +78,27 @@
 
     <section id="identity" class="section section-soft">
       <div class="section-heading">
-        <p class="eyebrow">Identite</p>
-        <h2>Un profil entre technologie, design et ambition creative.</h2>
+        <p class="eyebrow" data-i18n="identity.eyebrow">Identite</p>
+        <h2 data-i18n="identity.title">Un profil entre technologie, design et ambition creative.</h2>
       </div>
 
       <div class="split-grid">
         <article class="glass-card">
-          <p>
-            Depuis petit, je m'interesse au hardware, a la programmation et a la maniere
-            dont une bonne idee peut devenir un vrai projet.
+          <p data-i18n="identity.text_1">
+            Depuis petit, je m'interesse au hardware, a la programmation et a la maniere dont une bonne idee peut devenir un vrai projet.
           </p>
-          <p>
-            Mon objectif n'est pas seulement d'apprendre des outils. Je veux construire
-            une vision solide melangeant developpement, esthetique, narration et game design.
+          <p data-i18n="identity.text_2">
+            Mon objectif n'est pas seulement d'apprendre des outils. Je veux construire une vision solide melangeant developpement, esthetique, narration et game design.
           </p>
         </article>
 
         <article class="traits-card">
-          <h3>Ce que je veux montrer</h3>
+          <h3 data-i18n="identity.showcase_title">Ce que je veux montrer</h3>
           <ul class="trait-list">
-            <li>Creativite et envie de construire</li>
-            <li>Curiosite pour le code, le design et les systemes</li>
-            <li>Volonte de creer un studio et des licences originales</li>
-            <li>Progression constante sur des projets concrets</li>
+            <li data-i18n="identity.trait_1">Creativite et envie de construire</li>
+            <li data-i18n="identity.trait_2">Curiosite pour le code, le design et les systemes</li>
+            <li data-i18n="identity.trait_3">Volonte de creer un studio et des licences originales</li>
+            <li data-i18n="identity.trait_4">Progression constante sur des projets concrets</li>
           </ul>
         </article>
       </div>
@@ -109,36 +106,36 @@
 
     <section id="skills" class="section">
       <div class="section-heading">
-        <p class="eyebrow">Competences</p>
-        <h2>Des bases techniques solides avec une direction orientee creation.</h2>
+        <p class="eyebrow" data-i18n="skills.eyebrow">Competences</p>
+        <h2 data-i18n="skills.title">Des bases techniques solides avec une direction orientee creation.</h2>
       </div>
 
       <div class="cards cards-4">
         <article class="card reveal">
-          <span class="card-tag">Code</span>
-          <h3>Developpement web</h3>
-          <p>HTML, CSS, JavaScript, interfaces interactives et animations front-end.</p>
+          <span class="card-tag" data-i18n="skills.tag_code">Code</span>
+          <h3 data-i18n="skills.web_title">Developpement web</h3>
+          <p data-i18n="skills.web_text">HTML, CSS, JavaScript, interfaces interactives et animations front-end.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <span class="card-tag">Logic</span>
-          <h3>Programmation</h3>
-          <p>Python, algorithmique et reflexion structuree pour transformer une idee en systeme.</p>
+          <span class="card-tag" data-i18n="skills.tag_logic">Logic</span>
+          <h3 data-i18n="skills.programming_title">Programmation</h3>
+          <p data-i18n="skills.programming_text">Python, algorithmique et reflexion structuree pour transformer une idee en systeme.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <span class="card-tag">Design</span>
-          <h3>UI / UX</h3>
-          <p>Gout pour les interfaces propres, lisibles, modernes et inspirees d'une finition premium.</p>
+          <span class="card-tag" data-i18n="skills.tag_design">Design</span>
+          <h3 data-i18n="skills.design_title">UI / UX</h3>
+          <p data-i18n="skills.design_text">Gout pour les interfaces propres, lisibles, modernes et inspirees d'une finition premium.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <span class="card-tag">Hardware</span>
-          <h3>PC & optimisation</h3>
-          <p>Assemblage, configuration, tests et comprehension des composants et performances.</p>
+          <span class="card-tag" data-i18n="skills.tag_hardware">Hardware</span>
+          <h3 data-i18n="skills.hardware_title">PC & optimisation</h3>
+          <p data-i18n="skills.hardware_text">Assemblage, configuration, tests et comprehension des composants et performances.</p>
           <span class="card-accent"></span>
         </article>
       </div>
@@ -146,38 +143,38 @@
 
     <section id="tech-projects" class="section section-soft">
       <div class="section-heading">
-        <p class="eyebrow">Tech Projects</p>
-        <h2>Mes projets techniques pour apprendre, tester et progresser.</h2>
+        <p class="eyebrow" data-i18n="tech.eyebrow">Tech Projects</p>
+        <h2 data-i18n="tech.title">Mes projets techniques pour apprendre, tester et progresser.</h2>
       </div>
 
       <div class="cards">
         <article class="card reveal">
-          <h3>Portfolio web</h3>
-          <p>Un site personnel moderne avec navigation fluide, animations et presentation plus premium.</p>
+          <h3 data-i18n="tech.project_1_title">Portfolio web</h3>
+          <p data-i18n="tech.project_1_text">Un site personnel moderne avec navigation fluide, animations et presentation plus premium.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <h3>PC hardware</h3>
-          <p>Montage, optimisation et analyse des performances sur des configurations personnelles.</p>
+          <h3 data-i18n="tech.project_2_title">PC hardware</h3>
+          <p data-i18n="tech.project_2_text">Montage, optimisation et analyse des performances sur des configurations personnelles.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <h3>App mobile</h3>
-          <p>Prototype mobile pour experimenter la logique applicative et le design d'interface.</p>
+          <h3 data-i18n="tech.project_3_title">App mobile</h3>
+          <p data-i18n="tech.project_3_text">Prototype mobile pour experimenter la logique applicative et le design d'interface.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <h3>Arduino</h3>
-          <p>Petits systemes automatises, capteurs et experimentation autour de l'electronique.</p>
+          <h3 data-i18n="tech.project_4_title">Arduino</h3>
+          <p data-i18n="tech.project_4_text">Petits systemes automatises, capteurs et experimentation autour de l'electronique.</p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <h3>Exploration IA</h3>
-          <p>Tests de scripts et premieres explorations autour de l'intelligence artificielle.</p>
+          <h3 data-i18n="tech.project_5_title">Exploration IA</h3>
+          <p data-i18n="tech.project_5_text">Tests de scripts et premieres explorations autour de l'intelligence artificielle.</p>
           <span class="card-accent"></span>
         </article>
       </div>
@@ -185,44 +182,40 @@
 
     <section id="game-studio" class="section studio-section">
       <div class="section-heading">
-        <p class="eyebrow">Game Studio</p>
-        <h2>Un studio que je veux construire autour du sens, du respect et de la memoire du jeu.</h2>
+        <p class="eyebrow" data-i18n="studio.eyebrow">Game Studio</p>
+        <h2 data-i18n="studio.title">Un studio que je veux construire autour du sens, du respect et de la memoire du jeu.</h2>
       </div>
 
       <div class="studio-banner glass-card">
-        <p class="studio-bubble">
-          Je veux creer un studio de jeux video base entre Plan-de-Cuques et Marseille,
-          avec une vraie identite culturelle, des jeux narratifs forts et une maniere plus humaine de travailler.
+        <p class="studio-bubble" data-i18n="studio.bubble">
+          Je veux creer un studio de jeux video base entre Plan-de-Cuques et Marseille, avec une vraie identite culturelle, des jeux narratifs forts et une maniere plus humaine de travailler.
         </p>
       </div>
 
       <div class="cards">
         <article class="card project-card reveal">
-          <span class="card-tag">Jeu 1</span>
+          <span class="card-tag" data-i18n="studio.game_1_tag">Jeu 1</span>
           <h3>L'Ordre d'Alamut</h3>
-          <p>
-            Un thriller d'espionnage moderne autour d'un heritage secret.
-            Chaque mission transforme les factions, les alliances et la memoire du monde.
+          <p data-i18n="studio.game_1_text">
+            Un thriller d'espionnage moderne autour d'un heritage secret. Chaque mission transforme les factions, les alliances et la memoire du monde.
           </p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card project-card reveal">
-          <span class="card-tag">Jeu 2</span>
+          <span class="card-tag" data-i18n="studio.game_2_tag">Jeu 2</span>
           <h3>LAWBREAKER - Padis City</h3>
-          <p>
-            Une ville inspiree de Paris, des quartiers sous tension, et un avocat
-            capable d'utiliser la loi, l'influence et la peur comme armes.
+          <p data-i18n="studio.game_2_text">
+            Une ville inspiree de Paris, des quartiers sous tension, et un avocat capable d'utiliser la loi, l'influence et la peur comme armes.
           </p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card project-card reveal">
-          <span class="card-tag">Jeu 3</span>
+          <span class="card-tag" data-i18n="studio.game_3_tag">Jeu 3</span>
           <h3>Vampire's Decree</h3>
-          <p>
-            Un royaume gothique, des vampires, un complot royal et une progression
-            fondee sur la furtivite, le parkour et les choix moraux.
+          <p data-i18n="studio.game_3_text">
+            Un royaume gothique, des vampires, un complot royal et une progression fondee sur la furtivite, le parkour et les choix moraux.
           </p>
           <span class="card-accent"></span>
         </article>
@@ -230,34 +223,30 @@
 
       <div class="split-grid studio-details">
         <article class="glass-card reveal">
-          <p class="eyebrow">Vendetta System</p>
-          <h3>Une IA de memoire persistante</h3>
-          <p>
-            Le <strong>Vendetta System</strong> est une architecture d'IA comportementale
-            persistante. Les ennemis se souviennent, changent de statut, s'adaptent au style
-            du joueur et peuvent revenir plus tard avec de nouvelles strategies.
+          <p class="eyebrow" data-i18n="studio.system_eyebrow">Vendetta System</p>
+          <h3 data-i18n="studio.system_title">Une IA de memoire persistante</h3>
+          <p data-i18n="studio.system_text">
+            Le Vendetta System est une architecture d'IA comportementale persistante. Les ennemis se souviennent, changent de statut, s'adaptent au style du joueur et peuvent revenir plus tard avec de nouvelles strategies.
           </p>
           <ul class="trait-list">
-            <li>Memoire des affronts, humiliations et pertes</li>
-            <li>Hierarchie dynamique et promotions organiques</li>
-            <li>Represailles adaptees au style du joueur</li>
-            <li>Impact durable sur les factions et la sauvegarde</li>
+            <li data-i18n="studio.system_trait_1">Memoire des affronts, humiliations et pertes</li>
+            <li data-i18n="studio.system_trait_2">Hierarchie dynamique et promotions organiques</li>
+            <li data-i18n="studio.system_trait_3">Represailles adaptees au style du joueur</li>
+            <li data-i18n="studio.system_trait_4">Impact durable sur les factions et la sauvegarde</li>
           </ul>
         </article>
 
         <article class="glass-card reveal">
-          <p class="eyebrow">Creation</p>
-          <h3>Le studio et ses racines</h3>
-          <p>
-            Ma vision part de Marseille et Plan-de-Cuques. Je veux creer en France,
-            en VO francaise, avec une identite nourrie par des cultures reelles,
-            des sujets humains et une volonte de transmission.
+          <p class="eyebrow" data-i18n="studio.creation_eyebrow">Creation</p>
+          <h3 data-i18n="studio.creation_title">Le studio et ses racines</h3>
+          <p data-i18n="studio.creation_text">
+            Ma vision part de Marseille et Plan-de-Cuques. Je veux creer en France, en VO francaise, avec une identite nourrie par des cultures reelles, des sujets humains et une volonte de transmission.
           </p>
           <ul class="trait-list">
-            <li>Origines locales et ancrage culturel</li>
-            <li>VO francaise et ouverture internationale</li>
-            <li>Creation ambitieuse meme avec peu de moyens au depart</li>
-            <li>Respect des joueurs, des equipes et du sens des projets</li>
+            <li data-i18n="studio.creation_trait_1">Origines locales et ancrage culturel</li>
+            <li data-i18n="studio.creation_trait_2">VO francaise et ouverture internationale</li>
+            <li data-i18n="studio.creation_trait_3">Creation ambitieuse meme avec peu de moyens au depart</li>
+            <li data-i18n="studio.creation_trait_4">Respect des joueurs, des equipes et du sens des projets</li>
           </ul>
         </article>
       </div>
@@ -265,34 +254,31 @@
 
     <section id="manifesto" class="section section-soft">
       <div class="section-heading">
-        <p class="eyebrow">Vision</p>
-        <h2>Un studio plus humain, plus juste et plus proche des joueurs.</h2>
+        <p class="eyebrow" data-i18n="vision.eyebrow">Vision</p>
+        <h2 data-i18n="vision.title">Un studio plus humain, plus juste et plus proche des joueurs.</h2>
       </div>
 
       <div class="cards">
         <article class="card reveal">
-          <h3>Le studio</h3>
-          <p>
-            Je veux construire un studio de developpement qui defend des jeux ambitieux,
-            culturels et accessibles, sans suivre les abus habituels de l'industrie.
+          <h3 data-i18n="vision.card_1_title">Le studio</h3>
+          <p data-i18n="vision.card_1_text">
+            Je veux construire un studio de developpement qui defend des jeux ambitieux, culturels et accessibles, sans suivre les abus habituels de l'industrie.
           </p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <h3>Les employes</h3>
-          <p>
-            Mon objectif est de creer un cadre de travail plus humain : respect, egalite,
-            sante, soutien concret, transmission et meilleures conditions de vie.
+          <h3 data-i18n="vision.card_2_title">Les employes</h3>
+          <p data-i18n="vision.card_2_text">
+            Mon objectif est de creer un cadre de travail plus humain : respect, egalite, sante, soutien concret, transmission et meilleures conditions de vie.
           </p>
           <span class="card-accent"></span>
         </article>
 
         <article class="card reveal">
-          <h3>Les joueurs</h3>
-          <p>
-            Je veux proposer des jeux honnetes, des prix plus accessibles,
-            des editions physiques avec du vrai contenu et une relation basee sur la confiance.
+          <h3 data-i18n="vision.card_3_title">Les joueurs</h3>
+          <p data-i18n="vision.card_3_text">
+            Je veux proposer des jeux honnetes, des prix plus accessibles, des editions physiques avec du vrai contenu et une relation basee sur la confiance.
           </p>
           <span class="card-accent"></span>
         </article>
@@ -300,23 +286,21 @@
 
       <div class="split-grid studio-details">
         <article class="glass-card reveal">
-          <p class="eyebrow">Manifeste</p>
-          <h3>Ma vision du studio</h3>
-          <p>
-            Je veux prouver qu'un studio peut etre ambitieux sans devenir froid.
-            Les jeux doivent avoir une ame, les employes doivent etre respectes,
-            et les joueurs ne doivent pas etre traites comme de simples portefeuilles.
+          <p class="eyebrow" data-i18n="vision.manifesto_eyebrow">Manifeste</p>
+          <h3 data-i18n="vision.manifesto_title">Ma vision du studio</h3>
+          <p data-i18n="vision.manifesto_text">
+            Je veux prouver qu'un studio peut etre ambitieux sans devenir froid. Les jeux doivent avoir une ame, les employes doivent etre respectes, et les joueurs ne doivent pas etre traites comme de simples portefeuilles.
           </p>
         </article>
 
         <article class="glass-card reveal">
-          <p class="eyebrow">Valeurs</p>
-          <h3>Ce que je veux defendre</h3>
+          <p class="eyebrow" data-i18n="vision.values_eyebrow">Valeurs</p>
+          <h3 data-i18n="vision.values_title">Ce que je veux defendre</h3>
           <ul class="trait-list">
-            <li>Accessibilite, respect et prix plus justes</li>
-            <li>Culture, identite et sujets qui comptent vraiment</li>
-            <li>Transmission vers les jeunes et nouveaux createurs</li>
-            <li>Un studio ou l'humain compte autant que le resultat</li>
+            <li data-i18n="vision.value_1">Accessibilite, respect et prix plus justes</li>
+            <li data-i18n="vision.value_2">Culture, identite et sujets qui comptent vraiment</li>
+            <li data-i18n="vision.value_3">Transmission vers les jeunes et nouveaux createurs</li>
+            <li data-i18n="vision.value_4">Un studio ou l'humain compte autant que le resultat</li>
           </ul>
         </article>
       </div>
@@ -324,40 +308,37 @@
 
     <section id="contact" class="section section-soft">
       <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Discutons d'un projet, d'une idee ou d'une collaboration.</h2>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">Discutons d'un projet, d'une idee ou d'une collaboration.</h2>
       </div>
 
       <div class="contact-layout">
         <article class="glass-card contact-card">
           <p class="contact-label">Email</p>
           <a class="contact-link" href="mailto:adambennejma15@gmail.com">adambennejma15@gmail.com</a>
-          <p class="contact-note">
+          <p class="contact-note" data-i18n="contact.note">
             Ouvert aux echanges autour du web, de la tech et de la creation de jeux video.
           </p>
         </article>
 
-        <form class="contact-form glass-card" action="https://formspree.io/f/mkokvngj" method="POST">
-          <label for="name">Nom</label>
-          <input id="name" name="name" type="text" placeholder="Votre nom" required>
+        <form class="contact-form glass-card" action="mailto:adambennejma15@gmail.com" method="post" enctype="text/plain">
+          <label for="name" data-i18n="contact.name_label">Nom</label>
+          <input id="name" name="Nom" type="text" placeholder="Votre nom" data-i18n-placeholder="contact.name_placeholder" required>
 
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="Votre email" required>
+          <label for="email" data-i18n="contact.email_label">Email</label>
+          <input id="email" name="Email" type="email" placeholder="Votre email" data-i18n-placeholder="contact.email_placeholder" required>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+          <label for="message" data-i18n="contact.message_label">Message</label>
+          <textarea id="message" name="Message" placeholder="Votre message" data-i18n-placeholder="contact.message_placeholder" required></textarea>
 
-          <input type="hidden" name="_subject" value="Nouveau message depuis le portfolio">
-
-          <button class="button primary" type="submit">Envoyer</button>
-          <p class="form-status" aria-live="polite"></p>
+          <button class="button primary" type="submit" data-i18n="contact.send">Envoyer</button>
         </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2026 Adam Ben Nejma - Portfolio personnel et vision game studio.</p>
+    <p data-i18n="footer.text">&copy; 2026 Adam Ben Nejma - Portfolio personnel et vision game studio.</p>
   </footer>
 
   <script src="script.js"></script>

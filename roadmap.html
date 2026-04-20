@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="roadmap-page">
+<body class="roadmap-page" data-page="roadmap">
   <div class="page-glow page-glow-left"></div>
   <div class="page-glow page-glow-right"></div>
 
@@ -17,8 +17,9 @@
     <nav class="nav">
       <a class="brand" href="index.html">Adam Ben Nejma</a>
       <ul class="nav-links">
-        <li><a href="index.html">Portfolio</a></li>
-        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><a href="index.html" data-i18n="nav.portfolio">Portfolio</a></li>
+        <li><a href="roadmap.html" data-i18n="nav.roadmap">Roadmap</a></li>
+        <li><button id="lang-toggle" type="button" aria-label="Switch language">EN</button></li>
         <li><button id="theme-toggle" type="button" aria-label="Basculer le theme">&#127765;</button></li>
       </ul>
     </nav>
@@ -27,46 +28,44 @@
   <main class="roadmap-main">
     <section class="hero roadmap-hero">
       <div class="hero-copy">
-        <p class="eyebrow">Roadmap</p>
-        <h1>Mon parcours vers la creation d'un studio de jeux independant.</h1>
-        <p class="hero-text">
-          Une trajectoire claire pour passer de l'apprentissage technique a des projets de
-          jeux plus ambitieux, puis a une vraie identite de studio.
+        <p class="eyebrow" data-i18n="roadmap.eyebrow">Roadmap</p>
+        <h1 data-i18n="roadmap.title">Mon parcours vers la creation d'un studio de jeux independant.</h1>
+        <p class="hero-text" data-i18n="roadmap.text">
+          Une trajectoire claire pour passer de l'apprentissage technique a des projets de jeux plus ambitieux, puis a une vraie identite de studio.
         </p>
       </div>
     </section>
 
     <section class="timeline-section">
       <article class="timeline-item glass-card reveal">
-        <span class="timeline-step">Phase 1</span>
-        <h2>Fondations</h2>
-        <p>Renforcer les bases en code, logique, interfaces et culture des moteurs de jeu.</p>
+        <span class="timeline-step" data-i18n="roadmap.phase_1_step">Phase 1</span>
+        <h2 data-i18n="roadmap.phase_1_title">Fondations</h2>
+        <p data-i18n="roadmap.phase_1_text">Renforcer les bases en code, logique, interfaces et culture des moteurs de jeu.</p>
       </article>
 
       <article class="timeline-item glass-card reveal">
-        <span class="timeline-step">Phase 2</span>
-        <h2>Prototypage</h2>
-        <p>Creer de petits prototypes jouables pour tester des idees de gameplay, de furtivite et de choix.</p>
+        <span class="timeline-step" data-i18n="roadmap.phase_2_step">Phase 2</span>
+        <h2 data-i18n="roadmap.phase_2_title">Prototypage</h2>
+        <p data-i18n="roadmap.phase_2_text">Creer de petits prototypes jouables pour tester des idees de gameplay, de furtivite et de choix.</p>
       </article>
 
       <article class="timeline-item glass-card reveal">
-        <span class="timeline-step">Phase 3</span>
-        <h2>Projets serieux</h2>
-        <p>Assembler des experiences plus completes avec progression, IA, level design et optimisation.</p>
+        <span class="timeline-step" data-i18n="roadmap.phase_3_step">Phase 3</span>
+        <h2 data-i18n="roadmap.phase_3_title">Projets serieux</h2>
+        <p data-i18n="roadmap.phase_3_text">Assembler des experiences plus completes avec progression, IA, level design et optimisation.</p>
       </article>
 
       <article class="timeline-item glass-card reveal">
-        <span class="timeline-step">Phase 4</span>
-        <h2>Studio indie</h2>
-        <p>Poser une direction, publier, construire une communaute et transformer les concepts en vraies licences.</p>
+        <span class="timeline-step" data-i18n="roadmap.phase_4_step">Phase 4</span>
+        <h2 data-i18n="roadmap.phase_4_title">Studio indie</h2>
+        <p data-i18n="roadmap.phase_4_text">Poser une direction, publier, construire une communaute et transformer les concepts en vraies licences.</p>
       </article>
     </section>
 
     <section class="vision-panel glass-card reveal">
-      <p class="panel-label">Vision finale</p>
-      <p class="panel-quote">
-        Creer des jeux narratifs immersifs ou chaque decision change les relations, le monde
-        et la memoire des personnages.
+      <p class="panel-label" data-i18n="roadmap.final_label">Vision finale</p>
+      <p class="panel-quote" data-i18n="roadmap.final_text">
+        Creer des jeux narratifs immersifs ou chaque decision change les relations, le monde et la memoire des personnages.
       </p>
     </section>
   </main>
