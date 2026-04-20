@@ -661,3 +661,15 @@ body.dark .metric-card {
     height: 180px;
   }
 }
+.studio-details {
+  margin-top: 22px;
+}
+
+.studio-details h3 {
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+.studio-details p {
+  margin-bottom: 16px;
+}
