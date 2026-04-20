@@ -1,78 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Game Dev Roadmap</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Dev Roadmap | Adam Ben Nejma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body class="roadmap-page">
+  <div class="page-glow page-glow-left"></div>
+  <div class="page-glow page-glow-right"></div>
 
-<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">Adam Ben Nejma</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="roadmap.html">Roadmap</a></li>
+        <li><button id="theme-toggle" type="button" aria-label="Basculer le theme">&#127765;</button></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Portfolio</a></li>
-      <li><a href="roadmap.html">Roadmap</a></li>
-    </ul>
-  </nav>
-</header>
+  <main class="roadmap-main">
+    <section class="hero roadmap-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Roadmap</p>
+        <h1>Mon parcours vers la creation d'un studio de jeux independant.</h1>
+        <p class="hero-text">
+          Une trajectoire claire pour passer de l'apprentissage technique a des projets de
+          jeux plus ambitieux, puis a une vraie identite de studio.
+        </p>
+      </div>
+    </section>
 
-<main>
+    <section class="timeline-section">
+      <article class="timeline-item glass-card reveal">
+        <span class="timeline-step">Phase 1</span>
+        <h2>Fondations</h2>
+        <p>Renforcer les bases en code, logique, interfaces et culture des moteurs de jeu.</p>
+      </article>
 
-<section class="section">
-  <h1>🎮 Game Dev Roadmap</h1>
-  <p>Parcours vers la création d’un studio de jeux indépendant.</p>
-</section>
+      <article class="timeline-item glass-card reveal">
+        <span class="timeline-step">Phase 2</span>
+        <h2>Prototypage</h2>
+        <p>Creer de petits prototypes jouables pour tester des idees de gameplay, de furtivite et de choix.</p>
+      </article>
 
-<section class="section">
-  <h2>📌 Phase 1 — Fondations</h2>
-  <ul>
-    <li>HTML / CSS / JavaScript</li>
-    <li>Python (logique + scripts)</li>
-    <li>Algorithmique de base</li>
-    <li>Comprendre les moteurs de jeu (Unity / Unreal)</li>
-  </ul>
-</section>
+      <article class="timeline-item glass-card reveal">
+        <span class="timeline-step">Phase 3</span>
+        <h2>Projets serieux</h2>
+        <p>Assembler des experiences plus completes avec progression, IA, level design et optimisation.</p>
+      </article>
 
-<section class="section">
-  <h2>🧠 Phase 2 — Prototypage</h2>
-  <ul>
-    <li>Créer des mini-jeux 2D</li>
-    <li>Prototype gameplay (infiltration, combat, choix)</li>
-    <li>Tester des systèmes de décisions dynamiques</li>
-    <li>Apprendre les bases du level design</li>
-  </ul>
-</section>
+      <article class="timeline-item glass-card reveal">
+        <span class="timeline-step">Phase 4</span>
+        <h2>Studio indie</h2>
+        <p>Poser une direction, publier, construire une communaute et transformer les concepts en vraies licences.</p>
+      </article>
+    </section>
 
-<section class="section">
-  <h2>⚙️ Phase 3 — Projets sérieux</h2>
-  <ul>
-    <li>Développer un jeu complet jouable</li>
-    <li>IA basique pour PNJ</li>
-    <li>Systèmes de progression et sauvegarde</li>
-    <li>Optimisation et performance</li>
-  </ul>
-</section>
+    <section class="vision-panel glass-card reveal">
+      <p class="panel-label">Vision finale</p>
+      <p class="panel-quote">
+        Creer des jeux narratifs immersifs ou chaque decision change les relations, le monde
+        et la memoire des personnages.
+      </p>
+    </section>
+  </main>
 
-<section class="section">
-  <h2>🏢 Phase 4 — Studio Indie</h2>
-  <ul>
-    <li>Créer un studio indépendant</li>
-    <li>Publier sur Steam / itch.io</li>
-    <li>Construire une communauté</li>
-    <li>Monétisation et projets commerciaux</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>🚀 Vision finale</h2>
-  <p>
-    Créer des jeux narratifs immersifs où chaque décision a un impact réel sur le monde, les factions et les personnages.
-  </p>
-</section>
-
-</main>
-
+  <script src="script.js"></script>
 </body>
 </html>

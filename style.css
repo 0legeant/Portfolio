@@ -1,37 +1,37 @@
 :root {
-  --bg: #f5f7fb;
-  --bg-soft: #eef2f8;
-  --surface: rgba(255, 255, 255, 0.72);
-  --surface-strong: rgba(255, 255, 255, 0.92);
-  --text: #111827;
-  --muted: #5b6577;
-  --line: rgba(17, 24, 39, 0.08);
-  --shadow: 0 24px 80px rgba(25, 35, 58, 0.12);
-  --shadow-hover: 0 28px 100px rgba(25, 35, 58, 0.18);
-  --primary: #111827;
-  --accent: #7dd3fc;
-  --accent-strong: #38bdf8;
-  --hero-gradient: radial-gradient(circle at top left, rgba(125, 211, 252, 0.4), transparent 34%),
-    radial-gradient(circle at 85% 15%, rgba(167, 139, 250, 0.22), transparent 28%),
-    linear-gradient(180deg, #fbfdff 0%, #f2f6fb 100%);
+  --bg: #f7f5f0;
+  --bg-soft: #ece8de;
+  --surface: rgba(255, 252, 247, 0.78);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --text: #181614;
+  --muted: #625a52;
+  --line: rgba(37, 31, 27, 0.1);
+  --shadow: 0 28px 90px rgba(45, 31, 12, 0.09);
+  --shadow-hover: 0 34px 120px rgba(45, 31, 12, 0.16);
+  --primary: #151515;
+  --accent: #d8b56a;
+  --accent-strong: #c08d2a;
+  --hero-gradient: radial-gradient(circle at top left, rgba(216, 181, 106, 0.26), transparent 34%),
+    radial-gradient(circle at 86% 14%, rgba(255, 255, 255, 0.9), transparent 24%),
+    linear-gradient(180deg, #fcfaf5 0%, #f2ede3 100%);
 }
 
 body.dark {
-  --bg: #090b11;
-  --bg-soft: #0f1320;
-  --surface: rgba(17, 22, 34, 0.72);
-  --surface-strong: rgba(16, 20, 31, 0.88);
-  --text: #f4f7fb;
-  --muted: #9aa7bd;
-  --line: rgba(255, 255, 255, 0.08);
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-  --shadow-hover: 0 28px 100px rgba(0, 0, 0, 0.45);
-  --primary: #f4f7fb;
-  --accent: #60a5fa;
-  --accent-strong: #93c5fd;
-  --hero-gradient: radial-gradient(circle at top left, rgba(96, 165, 250, 0.16), transparent 34%),
-    radial-gradient(circle at 85% 15%, rgba(129, 140, 248, 0.12), transparent 26%),
-    linear-gradient(180deg, #0a0d15 0%, #0f1523 100%);
+  --bg: #0c0c0e;
+  --bg-soft: #151519;
+  --surface: rgba(22, 22, 26, 0.8);
+  --surface-strong: rgba(27, 27, 31, 0.92);
+  --text: #f7f3eb;
+  --muted: #b0a79b;
+  --line: rgba(255, 244, 227, 0.08);
+  --shadow: 0 28px 90px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 34px 120px rgba(0, 0, 0, 0.52);
+  --primary: #f7f3eb;
+  --accent: #e1bf78;
+  --accent-strong: #f3d39a;
+  --hero-gradient: radial-gradient(circle at top left, rgba(225, 191, 120, 0.16), transparent 34%),
+    radial-gradient(circle at 85% 14%, rgba(114, 114, 130, 0.14), transparent 24%),
+    linear-gradient(180deg, #121214 0%, #19191d 100%);
 }
 
 * {
@@ -46,7 +46,9 @@ body {
   margin: 0;
   font-family: "Instrument Sans", "Segoe UI", sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background:
+    radial-gradient(circle at top, rgba(216, 181, 106, 0.08), transparent 30%),
+    linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
   transition: background 0.35s ease, color 0.35s ease;
   overflow-x: hidden;
 }
@@ -77,11 +79,15 @@ textarea {
   justify-content: space-between;
   gap: 20px;
   padding: 14px 18px;
-  background: var(--surface);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.62));
   border: 1px solid var(--line);
   border-radius: 999px;
   backdrop-filter: blur(20px);
   box-shadow: var(--shadow);
+}
+
+body.dark .nav {
+  background: linear-gradient(180deg, rgba(28, 28, 32, 0.86), rgba(18, 18, 22, 0.72));
 }
 
 .brand {
@@ -116,9 +122,16 @@ textarea {
 #theme-toggle {
   border: 1px solid var(--line);
   background: var(--surface-strong);
-  padding: 8px 14px;
+  color: var(--text);
+  width: 48px;
+  height: 48px;
+  padding: 0;
   border-radius: 999px;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 main,
@@ -150,6 +163,7 @@ main,
   border-radius: 40px;
   padding: 48px;
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .hero-copy h1,
@@ -220,7 +234,7 @@ main,
 .card,
 .timeline-item,
 .vision-panel {
-  background: var(--surface);
+  background: linear-gradient(180deg, var(--surface-strong), var(--surface));
   border: 1px solid var(--line);
   backdrop-filter: blur(16px);
   box-shadow: var(--shadow);
@@ -236,6 +250,8 @@ main,
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
 }
 
 .panel-label,
@@ -247,7 +263,7 @@ main,
   width: fit-content;
   padding: 7px 12px;
   border-radius: 999px;
-  background: rgba(125, 211, 252, 0.18);
+  background: rgba(216, 181, 106, 0.18);
   color: var(--text);
   font-size: 0.82rem;
   font-weight: 700;
@@ -261,7 +277,7 @@ main,
 }
 
 .section-soft {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0.14));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.34), rgba(255, 251, 245, 0.18));
   border: 1px solid var(--line);
   border-radius: 40px;
   padding: 42px 32px 56px;
@@ -336,6 +352,8 @@ body.dark .trait-list li {
   transform: translateY(24px);
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.35s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .card h3 {
@@ -355,6 +373,7 @@ body.dark .trait-list li {
 .vision-panel:hover,
 .glass-card:hover {
   box-shadow: var(--shadow-hover);
+  transform: translateY(-4px);
 }
 
 .studio-section {
@@ -373,6 +392,79 @@ body.dark .trait-list li {
 
 .project-card {
   min-height: 240px;
+}
+
+.hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.metric-card {
+  padding: 16px 18px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.48);
+  border: 1px solid var(--line);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+body.dark .metric-card {
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.metric-card strong {
+  display: block;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.metric-card span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.hero-orbit {
+  position: absolute;
+  right: -40px;
+  top: -22px;
+  width: 220px;
+  height: 220px;
+  opacity: 0.88;
+}
+
+.orbit-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(216, 181, 106, 0.32);
+}
+
+.orbit-ring-large {
+  inset: 0;
+}
+
+.orbit-ring-small {
+  inset: 36px;
+}
+
+.orbit-core {
+  position: absolute;
+  inset: 86px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 181, 106, 0.85), rgba(216, 181, 106, 0.14));
+  box-shadow: 0 0 60px rgba(216, 181, 106, 0.34);
+}
+
+.card-accent {
+  position: absolute;
+  right: -18px;
+  top: -22px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(216, 181, 106, 0.2), transparent 70%);
 }
 
 .contact-layout {
@@ -407,6 +499,7 @@ body.dark .trait-list li {
   background: var(--surface-strong);
   color: var(--text);
   outline: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .contact-form textarea {
@@ -455,13 +548,13 @@ body.dark .trait-list li {
 .page-glow-left {
   top: -100px;
   left: -120px;
-  background: rgba(125, 211, 252, 0.28);
+  background: rgba(216, 181, 106, 0.28);
 }
 
 .page-glow-right {
   right: -110px;
   top: 24%;
-  background: rgba(129, 140, 248, 0.16);
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .bubbles {
@@ -476,7 +569,7 @@ body.dark .trait-list li {
   position: absolute;
   bottom: -120px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.6), rgba(125, 211, 252, 0.12));
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.65), rgba(216, 181, 106, 0.12));
   border: 1px solid rgba(255, 255, 255, 0.32);
   animation: floatBubble linear infinite;
 }
@@ -498,6 +591,10 @@ body.dark .trait-list li {
   .cards,
   .cards-4 {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-metrics {
+    grid-template-columns: 1fr;
   }
 
   .hero-copy h1 {
@@ -556,5 +653,11 @@ body.dark .trait-list li {
 
   .section {
     padding: 24px 0 34px;
+  }
+
+  .hero-orbit {
+    right: -70px;
+    width: 180px;
+    height: 180px;
   }
 }

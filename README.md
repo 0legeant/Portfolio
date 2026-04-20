@@ -4,7 +4,7 @@ Portfolio personnel avec une direction plus creative et plus orientee game dev.
 
 ## Contenu
 
-- Une page d'accueil moderne, legere et visuellement plus premium
+- Une page d'accueil moderne, plus premium et plus visuelle
 - Une section identite pour presenter le profil et la vision
 - Une section competences plus claire
 - Une separation entre projets tech et concepts de jeux
@@ -13,13 +13,14 @@ Portfolio personnel avec une direction plus creative et plus orientee game dev.
 
 ## Style
 
-Le site adopte une direction elegante inspiree d'une finition Apple :
+Le site adopte une direction elegante et plus noble :
 
 - verre floute
+- palette creme, noir et or
 - cartes lumineuses
 - animations douces
 - navigation propre
-- theme sombre simple
+- theme sombre avec bouton lune
 
 ## Fichiers
 

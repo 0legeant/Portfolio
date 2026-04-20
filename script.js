@@ -1,11 +1,21 @@
 const themeToggle = document.getElementById("theme-toggle");
 
+const updateThemeToggle = () => {
+  if (!themeToggle) {
+    return;
+  }
+
+  themeToggle.textContent = document.body.classList.contains("dark") ? "\uD83C\uDF11" : "\uD83C\uDF15";
+};
+
 if (themeToggle) {
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("dark");
-    themeToggle.textContent = document.body.classList.contains("dark") ? "Light" : "Moon";
+    updateThemeToggle();
   });
 }
+
+updateThemeToggle();
 
 const bubbleContainer = document.querySelector(".bubbles");
 
