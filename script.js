@@ -1,10 +1,7 @@
 const themeToggle = document.getElementById("theme-toggle");
 
 const updateThemeToggle = () => {
-  if (!themeToggle) {
-    return;
-  }
-
+  if (!themeToggle) return;
   themeToggle.textContent = document.body.classList.contains("dark") ? "\uD83C\uDF11" : "\uD83C\uDF15";
 };
 
@@ -59,11 +56,49 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const targetId = anchor.getAttribute("href");
     const target = targetId ? document.querySelector(targetId) : null;
 
-    if (!target) {
-      return;
-    }
+    if (!target) return;
 
     event.preventDefault();
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+const contactForm = document.querySelector(".contact-form");
+const formStatus = document.querySelector(".form-status");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+
+    if (formStatus) {
+      formStatus.textContent = "Envoi en cours...";
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (response.ok) {
+        contactForm.reset();
+        if (formStatus) {
+          formStatus.textContent = "Merci, votre message a bien ete envoye.";
+        }
+      } else {
+        if (formStatus) {
+          formStatus.textContent = "Une erreur est survenue. Reessaie dans un instant.";
+        }
+      }
+    } catch (error) {
+      if (formStatus) {
+        formStatus.textContent = "Impossible d'envoyer le message pour le moment.";
+      }
+    }
+  });
+}

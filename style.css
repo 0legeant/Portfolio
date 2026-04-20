@@ -673,3 +673,8 @@ body.dark .metric-card {
 .studio-details p {
   margin-bottom: 16px;
 }
+.form-status {
+  margin-top: 12px;
+  color: var(--muted);
+  min-height: 24px;
+}
