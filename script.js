@@ -164,7 +164,9 @@ const translations = {
       "tech.project_6_title": "Hackintosh",
       "tech.project_6_text": "J'ai installé macOS sur un PC non-Apple (HP ProDesk 400 G3) avec OpenCore, en modifiant des fichiers de configuration (plist). Il fonctionne vraiment : accélération graphique, web et usage de tous les jours. J'y apprends comment un ordinateur démarre et comment ses composants communiquent.",
       "tech.project_7_title": "Étude : GPU et pilotes graphiques",
-      "tech.project_7_text": "Je cherche à comprendre comment fonctionnent un GPU NVIDIA récent, Metal et les pilotes graphiques. Je débute : c'est un objectif d'apprentissage à long terme, lié à mon envie de devenir ingénieur."
+      "tech.project_7_text": "Je cherche à comprendre comment fonctionnent un GPU NVIDIA récent, Metal et les pilotes graphiques. Je débute : c'est un objectif d'apprentissage à long terme, lié à mon envie de devenir ingénieur.",
+      "nav.about": "À propos",
+      "identity.cta": "Lire mon à-propos"
     },
     "en": {
       "nav.home": "Home",
@@ -326,7 +328,9 @@ const translations = {
       "tech.project_6_title": "Hackintosh",
       "tech.project_6_text": "I installed macOS on a non-Apple PC (HP ProDesk 400 G3) using OpenCore, by editing configuration files (plist). It really works: graphics acceleration, web, and everyday use. I'm learning how a computer boots and how its components talk to each other.",
       "tech.project_7_title": "Study: GPUs and graphics drivers",
-      "tech.project_7_text": "I'm trying to understand how a modern NVIDIA GPU, Metal, and graphics drivers work. I'm a beginner: it's a long-term learning goal tied to my wish to become an engineer."
+      "tech.project_7_text": "I'm trying to understand how a modern NVIDIA GPU, Metal, and graphics drivers work. I'm a beginner: it's a long-term learning goal tied to my wish to become an engineer.",
+      "nav.about": "About",
+      "identity.cta": "Read more about me"
     }
   },
   "roadmap": {
@@ -382,7 +386,8 @@ const translations = {
       "roadmap.bottleneck_gpu_value": "À renforcer",
       "roadmap.bottleneck_storage": "Stockage / streaming",
       "roadmap.bottleneck_storage_value": "Bon",
-      "document.title": "Roadmap | Adam"
+      "document.title": "Roadmap | Adam",
+      "nav.about": "À propos"
     },
     "en": {
       "nav.portfolio": "Portfolio",
@@ -436,7 +441,110 @@ const translations = {
       "roadmap.bottleneck_gpu_value": "Needs headroom",
       "roadmap.bottleneck_storage": "Storage / streaming",
       "roadmap.bottleneck_storage_value": "Good",
-      "document.title": "Roadmap | Adam"
+      "document.title": "Roadmap | Adam",
+      "nav.about": "About"
+    }
+  },
+  "about": {
+    "fr": {
+      "nav.portfolio": "Portfolio",
+      "nav.about": "À propos",
+      "nav.roadmap": "Roadmap",
+      "skip.link": "Aller au contenu",
+      "meta.description": "À propos d'Adam, 15 ans, France : passion pour le hardware, objectif architecte CPU/GPU/APU et studio de jeux vidéo indépendant.",
+      "document.title": "À propos | Adam",
+      "about.eyebrow": "À propos",
+      "about.title": "Comprendre comment la technologie fonctionne, puis créer ce qui n'existe pas encore.",
+      "about.summary": "Je m'appelle Adam, j'ai 15 ans et je suis français. Je veux devenir architecte CPU/GPU/APU et, en parallèle, créer un studio de jeux vidéo indépendant : des histoires que les grands studios ne racontent pas, dans des mondes vivants.",
+      "about.fact1_value": "15 ans",
+      "about.fact1_label": "Âge",
+      "about.fact2_value": "France",
+      "about.fact2_label": "Pays",
+      "about.fact3_value": "Architecte CPU/GPU/APU",
+      "about.fact3_label": "Objectif métier",
+      "about.fact4_value": "Studio de jeux indépendant",
+      "about.fact4_label": "Second objectif",
+      "about.closing_label": "Ce que je veux faire",
+      "about.closing": "Je veux comprendre ce qui existe, apprendre de mes erreurs, créer ce qui n'existe pas encore et repousser constamment les limites de ce que la technologie permet de faire.",
+      "about.back": "Retour au portfolio",
+      "footer.text": "© 2026 Adam",
+      "about.origin.title": "D'où vient ma curiosité",
+      "about.origin.p1": "Depuis que je suis petit, j'ai toujours eu besoin de comprendre comment les choses fonctionnent. On me disait souvent que je deviendrais ingénieur parce que je démontais les choses pour comprendre ce qu'il y avait derrière.",
+      "about.origin.p2": "Avec le temps, cette curiosité s'est transformée en passion pour la technologie, et plus particulièrement pour le <strong>hardware</strong>.",
+      "about.hardware.title": "Le hardware, de la puce à l'image",
+      "about.hardware.p1": "Aujourd'hui, ce qui me fascine le plus, ce sont les <strong>CPU, GPU et APU</strong>, leur architecture, leur fonctionnement et tout le pipeline qui relie le matériel au logiciel : architecture, OS, pilotes, API comme <strong>Vulkan, Metal ou DirectX</strong>, jusqu'à l'image affichée à l'écran.",
+      "about.hardware.p2": "Je ne veux pas simplement utiliser la technologie. <strong>Je veux comprendre pourquoi elle fonctionne, comment elle pourrait fonctionner autrement et jusqu'où on peut la pousser.</strong>",
+      "about.hard.title": "Les projets difficiles",
+      "about.hard.p1": "C'est aussi pour cela que j'aime les projets difficiles et parfois très niche. Le Hackintosh en est un exemple : comprendre macOS, les bootloaders, les pilotes et le hardware, puis réussir à faire fonctionner ensemble des éléments qui n'étaient pas conçus pour fonctionner de cette manière.",
+      "about.hard.p2": "Ce genre de projet représente exactement ce que j'aime : partir d'un problème, chercher, expérimenter, échouer, comprendre pourquoi, recommencer et finalement réussir.",
+      "about.learning.title": "Ma manière d'apprendre",
+      "about.learning.p1": "Je vais parfois très loin dans les sujets qui m'intéressent, parfois même trop loin. 😄",
+      "about.learning.p2": "J'aime les domaines complexes et ultra-niches, surtout lorsqu'ils demandent de comprendre plusieurs couches à la fois. Je préfère partir d'un problème concret, chercher moi-même sa solution, expérimenter et construire quelque chose plutôt que simplement apprendre une théorie sans l'appliquer.",
+      "about.learning.p3": "Et surtout, j'aime me tromper. Quand quelque chose ne fonctionne pas, je veux comprendre <strong>pourquoi</strong>. Puis je recommence. L'échec devient alors une information supplémentaire qui me permet d'améliorer ce que je construis.",
+      "about.learning.p4": "Ce qui me donne le plus de satisfaction n'est pas seulement de voir un projet fonctionner : c'est de savoir que j'ai compris ce qui se trouvait derrière, que j'ai réussi à résoudre le problème et que quelqu'un pourra ensuite profiter de ce que j'ai créé.",
+      "about.create.title": "Créer plutôt que seulement utiliser",
+      "about.create.p1": "Mon objectif professionnel principal est de devenir <strong>architecte CPU/GPU/APU</strong>. J'aimerais un jour concevoir des architectures qui seront réellement utilisées par des millions de personnes.",
+      "about.create.p2": "Ce qui me fascine particulièrement chez Apple est le fait d'avoir développé ses propres architectures et ses propres <strong>SoC/APU</strong>, en contrôlant une grande partie de la chaîne matérielle et logicielle. L'idée qu'une architecture que j'aurais contribué à concevoir puisse se retrouver dans une machine utilisée quotidiennement par des millions de personnes me fascine.",
+      "about.create.p3": "J'aime également observer différentes visions de l'industrie. La révolution menée par <strong>Jensen Huang</strong> dans le domaine du GPU et du calcul accéléré m'intéresse énormément. Mais je suis tout autant attiré par le <strong>minimalisme et la recherche de simplicité</strong> associés à Steve Jobs et à l'approche industrielle d'Apple, ainsi que par le travail de <strong>Tim Cook</strong> sur l'exécution et les opérations à grande échelle. Le travail de <strong>John Ternus</strong> m'intéresse particulièrement pour son approche de l'ingénierie matérielle et industrielle.",
+      "about.worlds.title": "Créer des mondes",
+      "about.worlds.p1": "Mon autre objectif est de développer, en parallèle de mon parcours d'ingénieur, un <strong>studio de jeux vidéo indépendant de niveau mondial</strong>.",
+      "about.worlds.p2": "Je ne veux pas simplement produire des jeux pour occuper les joueurs. Je veux raconter des histoires que les grands studios ne racontent pas forcément, notamment certaines histoires historiques et certains événements mondiaux. Faire vivre ces histoires à travers un jeu peut être une manière de contribuer à ce qu'elles ne soient pas oubliées.",
+      "about.worlds.p3": "Je veux également créer des mondes réellement vivants : des <strong>PNJ capables de mémoire, d'évolution et de réactions différentes</strong>, afin que deux joueurs ne vivent pas exactement la même expérience. Une sauvegarde pourrait raconter une histoire différente de celle d'un autre joueur. Le but est de créer des milliers d'heures d'expériences qui restent différentes au lieu de simplement répéter le même scénario.",
+      "about.worlds.p4": "Pour moi, <strong>la technologie doit servir la créativité, pas la remplacer</strong>.",
+      "about.future.title": "Une vision à long terme",
+      "about.future.p1": "À court et moyen terme, je veux progresser jusqu'à devenir un véritable ingénieur capable de comprendre et de concevoir des architectures matérielles et logicielles complexes, tout en développant mon propre univers de jeux vidéo.",
+      "about.future.p2": "À très long terme, mon ambition est beaucoup plus grande : <strong>concevoir des architectures majeures, créer des technologies utilisées à grande échelle et construire un studio capable de rivaliser avec les plus grands studios de l'industrie.</strong>",
+      "about.future.p3": "Et si je devais pousser cette ambition jusqu'à son maximum, j'aimerais un jour pouvoir diriger une entreprise technologique majeure comme <strong>Apple</strong>, tout en continuant à créer et à innover. Pas simplement pour devenir dirigeant. Pour pouvoir <strong>changer la technologie elle-même</strong> : remettre l'innovation au centre, créer des architectures radicalement nouvelles, rendre la technologie plus accessible, améliorer les relations avec les développeurs et trouver un meilleur équilibre entre la rentabilité, la qualité et l'intérêt des utilisateurs."
+    },
+    "en": {
+      "nav.portfolio": "Portfolio",
+      "nav.about": "About",
+      "nav.roadmap": "Roadmap",
+      "skip.link": "Skip to content",
+      "meta.description": "About Adam, 15, France: passion for hardware, goal of becoming a CPU/GPU/APU architect, and an independent video game studio.",
+      "document.title": "About | Adam",
+      "about.eyebrow": "About",
+      "about.title": "Understanding how technology works, then creating what doesn't exist yet.",
+      "about.summary": "My name is Adam, I'm 15 and I'm French. I want to become a CPU/GPU/APU architect and, alongside that, build an independent video game studio: stories the big studios don't tell, in living worlds.",
+      "about.fact1_value": "15 years old",
+      "about.fact1_label": "Age",
+      "about.fact2_value": "France",
+      "about.fact2_label": "Country",
+      "about.fact3_value": "CPU/GPU/APU architect",
+      "about.fact3_label": "Career goal",
+      "about.fact4_value": "Independent game studio",
+      "about.fact4_label": "Second goal",
+      "about.closing_label": "What I want to do",
+      "about.closing": "I want to understand what exists, learn from my mistakes, create what doesn't exist yet, and constantly push the limits of what technology can do.",
+      "about.back": "Back to the portfolio",
+      "footer.text": "© 2026 Adam",
+      "about.origin.title": "Where my curiosity comes from",
+      "about.origin.p1": "Ever since I was little, I have always needed to understand how things work. People often told me I would become an engineer because I took things apart to see what was behind them.",
+      "about.origin.p2": "Over time, that curiosity turned into a passion for technology, and more specifically for <strong>hardware</strong>.",
+      "about.hardware.title": "Hardware, from the chip to the image",
+      "about.hardware.p1": "What fascinates me most today is <strong>CPUs, GPUs and APUs</strong>: their architecture, how they work, and the whole pipeline linking hardware to software (architecture, OS, drivers, APIs like <strong>Vulkan, Metal or DirectX</strong>) all the way to the image on the screen.",
+      "about.hardware.p2": "I don't just want to use technology. <strong>I want to understand why it works, how it could work differently, and how far it can be pushed.</strong>",
+      "about.hard.title": "Difficult projects",
+      "about.hard.p1": "That is also why I like difficult, sometimes very niche projects. The Hackintosh is one example: understanding macOS, bootloaders, drivers and hardware, then getting parts that were never designed to work together to do exactly that.",
+      "about.hard.p2": "This kind of project is exactly what I love: start from a problem, search, experiment, fail, understand why, start again and finally succeed.",
+      "about.learning.title": "How I learn",
+      "about.learning.p1": "I sometimes go very deep into the subjects that interest me, sometimes even too deep. 😄",
+      "about.learning.p2": "I like complex, ultra-niche fields, especially when they require understanding several layers at once. I prefer to start from a concrete problem, look for the solution myself, experiment and build something rather than just learn theory without applying it.",
+      "about.learning.p3": "And above all, I like being wrong. When something doesn't work, I want to understand <strong>why</strong>. Then I start again. Failure becomes extra information that helps me improve what I build.",
+      "about.learning.p4": "What gives me the most satisfaction is not only seeing a project work: it is knowing that I understood what was behind it, that I solved the problem, and that someone will be able to benefit from what I created.",
+      "about.create.title": "Creating, not just using",
+      "about.create.p1": "My main professional goal is to become a <strong>CPU/GPU/APU architect</strong>. One day I would like to design architectures that are actually used by millions of people.",
+      "about.create.p2": "What fascinates me most about Apple is that it developed its own architectures and its own <strong>SoCs/APUs</strong>, controlling a large part of the hardware and software chain. The idea that an architecture I helped design could end up in a machine used every day by millions of people fascinates me.",
+      "about.create.p3": "I also like looking at different visions of the industry. The revolution led by <strong>Jensen Huang</strong> in GPUs and accelerated computing interests me enormously. But I am just as drawn to the <strong>minimalism and search for simplicity</strong> associated with Steve Jobs and Apple's industrial approach, and to <strong>Tim Cook</strong>'s work on execution and operations at scale. <strong>John Ternus</strong>'s work interests me in particular for his approach to hardware and industrial engineering.",
+      "about.worlds.title": "Creating worlds",
+      "about.worlds.p1": "My other goal is to build, alongside my engineering path, a <strong>world-class independent video game studio</strong>.",
+      "about.worlds.p2": "I don't want to simply make games to keep players busy. I want to tell stories that big studios don't necessarily tell, including certain historical stories and world events. Bringing those stories to life through a game can be a way to help make sure they are not forgotten.",
+      "about.worlds.p3": "I also want to create truly living worlds: <strong>NPCs capable of memory, evolution and different reactions</strong>, so that two players don't live exactly the same experience. A save file could tell a different story from someone else's. The goal is to create thousands of hours of experiences that stay different instead of repeating the same script.",
+      "about.worlds.p4": "For me, <strong>technology should serve creativity, not replace it</strong>.",
+      "about.future.title": "A long-term vision",
+      "about.future.p1": "In the short and medium term, I want to grow into a real engineer able to understand and design complex hardware and software architectures, while building my own video game universe.",
+      "about.future.p2": "In the very long term, my ambition is much bigger: <strong>to design major architectures, create technologies used at scale, and build a studio able to compete with the biggest studios in the industry.</strong>",
+      "about.future.p3": "And if I pushed that ambition to its maximum, one day I would like to lead a major technology company like <strong>Apple</strong>, while continuing to create and innovate. Not simply to become a leader. To be able to <strong>change technology itself</strong>: put innovation back at the center, create radically new architectures, make technology more accessible, improve relationships with developers, and find a better balance between profitability, quality and user interests."
     }
   }
 };
@@ -459,7 +567,11 @@ const applyLanguage = (lang) => {
       return;
     }
 
-    element.textContent = value;
+    if (element.hasAttribute("data-i18n-html")) {
+      element.innerHTML = value;
+    } else {
+      element.textContent = value;
+    }
   });
 
   document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
