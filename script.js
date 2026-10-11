@@ -83,7 +83,7 @@ const translations = {
       "vendetta.cta": "Voir la roadmap",
       "studio.eyebrow": "Game Studio",
       "studio.title": "Un studio que je veux construire autour du sens, du respect et de la mémoire du jeu.",
-      "studio.bubble": "Je veux créer un studio de jeux vidéo en France, avec une vraie identité culturelle, des jeux narratifs forts et une manière plus humaine de travailler.",
+      "studio.bubble": "Je veux créer un studio de jeux vidéo en France, avec une vraie identité culturelle, des jeux narratifs forts et une manière plus humaine de travailler. Voila le site du studio : <a href=\"https://0legeant.github.io/ventryx-studio/\" target=\"_blank\">https://0legeant.github.io/ventryx-studio/</a>"
       "studio.search": "Je cherche une personne pour la direction artistique (DA) de mes jeux.",
       "studio.system_eyebrow": "Vendetta System",
       "studio.system_title": "Une IA de mémoire persistante",
